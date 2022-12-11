@@ -5,22 +5,23 @@
 package com.mycompany.uts_no2_a_3001;
 
 /**
- *
- * @author ASUS
+ *21103001
+ * @author Aisyah Fitri Hidayati
+ * S1SI05A
  */
 public class Salaried_Employee_3001 {
-
     String nama_3001;
     int nip_3001;
-    double upah_mingguan_3001, gaji_3001;
+    double upah_3001, gaji_3001;
+    
+    public double gaji_3001(){
+        gaji_3001 = upah_3001;
+        return gaji_3001;
+    }
     
     public void tampilDataSalaried_Employee_3001(){
-        System.out.println("Nama                : "+nama_3001);
-        System.out.println("NIP                 : "+nip_3001);
-        System.out.println("Upah Mingguan       : "+upah_mingguan_3001);
-    }
-    public double InfogajiSalaried(double upah_mingguan){
-        double gaji_3001 = upah_mingguan;
-        return gaji_3001;
+        System.out.println("Nama               : " + nama_3001);
+        System.out.println("NIP                : " + nip_3001);
+        System.out.println("Upah Mingguan      : " + gaji_3001);
     }
 }
